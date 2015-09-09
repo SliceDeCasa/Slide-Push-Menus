@@ -83,6 +83,13 @@
     this.mask.classList.add('is-active');
     this.disableMenuOpeners();
   };
+  
+  /**
+   * Is the menu open?
+   */
+  Menu.prototype.isOpen = function() {
+    return this.menu.classList.contains('is-active');
+  };
 
   /**
    * Close Menu.
